@@ -2,23 +2,7 @@
 description: Hyprland Dots
 
 packages:
-  - whitesur-cursor-theme-git
-  - nautilus
-  - file-roller
-  - unzip
-  - unrar
-  - zip
-  - gvfs
-  - 7zip
-  - fuzzel
-  - overskride-bin
-  - swww
-  - swaync
-  - waybar
-  - starship
-  - vesktop-bin
-  - xwayland-satellite
-  - brightnessctl
+  - packages.yaml
 
 conflicts: []
 
