@@ -1,0 +1,160 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# =============================================================================
+# Starship Configuration - 2 Line Style
+# Theme: Kanagawa Dragon
+#
+# Preview:
+# ╭─  in ~/projects/dots on  main
+# ╰─ ❯
+# =============================================================================
+
+format = """
+[╭─](dragonGray)\
+$os\
+$directory\
+$git_branch\
+$git_status\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$python\
+$docker_context\
+$conda\
+$line_break\
+$character"""
+
+# Define Kanagawa Dragon Palette
+palette = "kanagawa_dragon"
+
+[palettes.kanagawa_dragon]
+background = "#181616"
+foreground = "#c5c9c5"
+dragonRed = "#c4746e"
+dragonGreen = "#8a9a7b"
+dragonYellow = "#c4b28a"
+dragonBlue = "#7fb4ca"
+dragonMagenta = "#938aa9"
+dragonCyan = "#7aa89f"
+dragonOrange = "#b6927b"
+dragonGray = "#727169"
+
+# ------------------------------------------------------------------------------
+# Core UI Elements
+# ------------------------------------------------------------------------------
+
+[character]
+success_symbol = "[╰─](dragonGray) [❯](bold dragonGreen)"
+error_symbol = "[╰─](dragonGray) [❯](bold dragonRed)"
+vimcmd_symbol = "[╰─](dragonGray) [❮](bold dragonGreen)"
+
+[line_break]
+disabled = false
+
+[directory]
+style = "dragonBlue"
+read_only = " "
+truncation_length = 4
+truncation_symbol = "…/"
+format = 'in [$path]($style)[$read_only]($style) '
+
+[os]
+disabled = false
+style = "dragonGray"
+format = ' [$symbol]($style)' # Space before symbol for padding
+
+[os.symbols]
+Arch = " "
+Ubuntu = " "
+Debian = " "
+Fedora = " "
+Linux = " "
+Macos = " "
+Windows = " "
+Manjaro = " "
+Gentoo = "ji "
+EndeavourOS = " "
+NixOS = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Artix = " "
+CentOS = " "
+FreeBSD = " "
+Kali = " "
+Mint = " "
+OpenBSD = " "
+openSUSE = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Solus = "ﴱ "
+SUSE = " "
+Void = " "
+CachyOS = " " # Cachy uses Arch icon often, or custom if font supports it
+
+# ------------------------------------------------------------------------------
+# Git Integration
+# ------------------------------------------------------------------------------
+
+[git_branch]
+symbol = " "
+style = "dragonMagenta"
+format = 'on [$symbol$branch]($style) '
+
+[git_status]
+style = "dragonRed"
+format = '[$all_status$ahead_behind]($style) '
+
+# ------------------------------------------------------------------------------
+# Language & Tool Versions (Shown only when files exist)
+# ------------------------------------------------------------------------------
+
+[c]
+symbol = " "
+style = "dragonYellow"
+format = 'via [$symbol($version )]($style)'
+
+[docker_context]
+symbol = " "
+style = "dragonBlue"
+format = 'via [$symbol$context]($style) '
+
+[golang]
+symbol = " "
+style = "dragonBlue"
+format = 'via [$symbol($version )]($style)'
+
+[java]
+symbol = " "
+style = "dragonRed"
+format = 'via [$symbol($version )]($style)'
+
+[nodejs]
+symbol = " "
+style = "dragonGreen"
+format = 'via [$symbol($version )]($style)'
+
+[php]
+symbol = " "
+style = "dragonBlue"
+format = 'via [$symbol($version )]($style)'
+
+[python]
+symbol = "🐍 "
+style = "dragonYellow"
+format = 'via [$symbol($version )(\($virtualenv\) )]($style)'
+
+[rust]
+symbol = " "
+style = "dragonRed"
+format = 'via [$symbol($version )]($style)'
+
+[conda]
+symbol = " "
+style = "dragonGreen"
+format = 'via [$symbol$environment]($style)'

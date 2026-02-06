@@ -1,0 +1,31 @@
+# Module for hyprDots
+description: Hyprland Dots
+
+packages:
+  - whitesur-cursor-theme-git
+  - nautilus
+  - file-roller
+  - unzip
+  - unrar
+  - zip
+  - gvfs
+  - 7zip
+  - fuzzel
+  - overskride-bin
+  - swww
+  - swaync
+  - waybar
+  - starship
+  - vesktop-bin
+  - xwayland-satellite
+  - brightnessctl
+
+conflicts: []
+
+# Enabling dots sync
+# This auto-syncs dotfiles/ to ~/.config/
+dotfiles_sync: true
+
+pre_install_hook: ""
+
+post_install_hook: ""
