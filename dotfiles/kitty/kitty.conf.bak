@@ -50,9 +50,3 @@ enable_audio_bell no
 # THEME
 # -----------------------------------------------------------------------------
 include ~/.config/kitty/themes/Matugen.conf
-
-
-# BEGIN_KITTY_THEME
-# Matugen
-include current-theme.conf
-# END_KITTY_THEME
