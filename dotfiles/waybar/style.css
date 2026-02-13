@@ -80,6 +80,7 @@ tooltip label {
 #tray,
 #custom-power,
 #power-profiles-daemon,
+#mpris,
 #custom-notification {
     background-color: @background;
     padding: 0px 15px 0px 15px;
