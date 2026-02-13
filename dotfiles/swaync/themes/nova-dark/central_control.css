@@ -9,7 +9,7 @@
 
     all: unset;
     font-size: 14px;
-    font-family: "JetBrains Mono Nerd Font 10";
+    font-family: "JetBrainsMono Nerd Font Propo";
     transition: 200ms;
 }
 
@@ -243,7 +243,7 @@ progressbar {
 
 /* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
 .widget-mpris-player {
-    background-color: @background-sec;
+    background-color: @surface_container;
     border-radius: 22px;
     padding: 6px 14px;
     margin: 6px;
