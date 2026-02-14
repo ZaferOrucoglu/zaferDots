@@ -1,4 +1,4 @@
-@import "colors.css";
+@import url("colors.css");
 * {
     /* `otf-font-awesome` is requierror to be installed for icons */
     border: none;
@@ -98,8 +98,8 @@ tooltip label {
 }
 
 #pulseaudio {
-    color: @tertiary_fixed_dim;
-    font-size: 16px;
+    color: @primary_fixed_dim;
+    font-size: 13px;
 }
 
 #network {
@@ -107,7 +107,7 @@ tooltip label {
 }
 
 #battery {
-    color: @tertiary_fixed_dim;
+    color: @primary_fixed_dim;
 }
 
 #custom-power {

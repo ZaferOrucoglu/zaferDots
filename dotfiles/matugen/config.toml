@@ -35,9 +35,9 @@ post_hook = "swaync-client -rs"
 
 # # waybar auto-theme
 [templates.waybar]
-input_path = '~/.config/swaync/matugen/colors.css'
+input_path = '~/.config/matugen/colors.css'
 output_path = '~/.config/waybar/colors.css'
-post_hook = 'bash ~/.config/hypr/scripts/waybar.sh'
+post_hook = 'sleep 0.5 && bash ~/.config/hypr/scripts/waybar.sh'
 
 # cava auto-theme
 [templates.cava]
